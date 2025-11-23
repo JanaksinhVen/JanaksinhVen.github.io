@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>InteracTalker: Prompt-Based Human-Object Interaction with Co-Speech Gesture Generation</title>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+
+    gtag('config', 'G-PYVRSFMDRL');
+  </script>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  <!--   <link rel="icon" href="./static/images/favicon.svg"> -->
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+</head>
+
+<body>
+
+
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <h1 class="title is-1 publication-title">SegMango: Early Deep Mango Yield Prediction based on Flower Segmentation 
+              and Weather Data</h1>
+            <h2 style="color:red;" class="title is-3">WACV 2026</h2>
+            <div class="is-size-5 publication-authors">
+              <span class="author-block">
+                <a href="https://sreeharirajan.github.io/">Janaksinh Ven</a><sup>1</sup>,</span>
+              <span class="author-block">
+                <a>Charu Sharma</a><sup>1</sup>,</span>
+              <span class="author-block">
+                <a href="">Azeemuddin Syed</a><sup>2</sup>,
+              </span>
+            </div>
+
+            <div class="is-size-5 publication-authors">
+              <span class="author-block"><sup>1</sup>Machine Learning Lab, IIIT Hyderabad,</span>
+              <span class="author-block"><sup>2</sup>Electrical and Computer Engineering, Penn State Erie, The Behrend College, Pennsylvania, USA,</span>
+            </div>
+
+            <div class="column has-text-centered">
+              <div class="publication-links">
+                <!-- PDF Link. -->
+                <span class="link-block">
+                  <a class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                    </span>
+                    <span>Paper</span>
+                  </a>
+                </span>
+                <!-- Video Link. -->
+                <span class="link-block">
+                  <a href="https://janaksinhven.github.io/projects/segmango/"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fab fa-youtube"></i>
+                    </span>
+                    <span>Video</span>
+                  </a>
+                </span>
+                <!-- Code Link. -->
+                <span class="link-block">
+                  <a href="https://janaksinhven.github.io/projects/segmango/"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fab fa-github"></i>
+                    </span>
+                    <span>Code</span>
+                  </a>
+                </span>
+                <!-- Dataset Link. -->
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="section">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <!-- <h2 class="title is-3">Architecture</h2> -->
+          <div class="publication-video">
+            <img src="./static/images/method_diagram.jpg" class="interpolation-image" alt="architecture." />
+          </div>
+        </div>
+      </div>
+      <!-- Abstract. -->
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <h2 class="title is-3">Abstract</h2>
+          <div class="content has-text-justified">
+            <p>
+              Early-stage fruit yield prediction plays a key role in supporting 
+              timely agronomic decisions, enhancing market planning, and empowering 
+              farmers with data-driven insights. Over the years, most approaches to yield estima
+              tion have focused on fruit counting techniques, typically
+               performed just before harvest. While these methods have
+               proven useful, they often come into play late in the cultivation 
+               cycle, limiting their impact on early planning and
+               resource optimization. In this work, we introduce a com
+              prehensive baseline framework for predicting mango yield
+               at an earlier stage- during flowering- using image-based
+               learning. Our contributions are twofold: (i) Our approach
+               combines a SegFormer-based segmentation model with at
+              tention fusion and a regression pipeline to estimate yield
+               from images, while also exploring the role of contextual features
+                such as weather and scale. (ii) This work introduces a
+               novel benchmark and an enriched dataset, paving the way
+               for scalable, automated tools that can assist farmers and
+               stakeholders in making proactive decisions throughout the
+               mango growing season. Our work demonstrates that, for
+               multi-modal yield prediction, weather factors complement
+               visual features, while scale and weather features further reinforce
+                each other, leading to improved results. Our single
+              image model, basedontheSegFormer-B1encoder, achieved
+               a mean absolute error (MAE) of 7.21, R² of 0.8, and mean
+               squared error (MSE) of 96.83. These results highlight the
+               potential of vision-based models for yield estimation from
+               early-stage flowering cues. To the best of our knowledge,
+               this is the first work to address the prediction of mango yield
+               using images from the flowering stage and weather data.
+            </p>
+          </div>
+        </div>
+      </div>
+      <!--/ Abstract. -->
+
+      <!-- Paper video. -->
+      <!-- <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <h2 class="title is-3">Architecture</h2>
+          <div class="publication-video">
+            <img src="./static/images/architecture.png" class="interpolation-image" alt="architecture." />
+          </div>
+        </div>
+      </div> -->
+      <!--/ Paper video. -->
+    </div>
+  </section>
+
+
+  <!-- <section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title">BibTeX</h2>
+    <pre><code>@article{park2021nerfies,
+  author    = {Park, Keunhong and Sinha, Utkarsh and Barron, Jonathan T. and Bouaziz, Sofien and Goldman, Dan B and Seitz, Steven M. and Martin-Brualla, Ricardo},
+  title     = {Nerfies: Deformable Neural Radiance Fields},
+  journal   = {ICCV},
+  year      = {2021},
+}</code></pre>
+  </div>
+</section> -->
+
+
+  <footer class="footer">
+    <div class="container">
+      <div class="content has-text-centered">
+        <a class="icon-link" href="./static/videos/nerfies_paper.pdf">
+          <i class="fas fa-file-pdf"></i>
+        </a>
+        <a class="icon-link" href="https://github.com/keunhong" class="external-link" disabled>
+          <i class="fab fa-github"></i>
+        </a>
+      </div>
+      <div class="columns is-centered">
+        <div class="column is-8">
+          <div class="content">
+            <p>
+              This website is licensed under a <a rel="license"
+                href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
+                Commons Attribution-ShareAlike 4.0 International License</a>.
+            </p>
+            <p>
+              This means you are free to borrow the <a href="https://github.com/nerfies/nerfies.github.io">source
+                code</a> of this website,
+              we just ask that you link back to this page in the footer.
+              Please remember to remove the analytics code included in the header of the website which
+              you do not want on your website.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+
+</html>
