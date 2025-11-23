@@ -47,9 +47,8 @@
       <div class="container is-max-desktop">
         <div class="columns is-centered">
           <div class="column has-text-centered">
-            <h1 class="title is-1 publication-title">SegMango: Early Deep Mango Yield Prediction based on Flower Segmentation 
-              and Weather Data</h1>
-            <h2 style="color:red;" class="title is-3">WACV 2026</h2>
+            <h1 class="title is-1 publication-title">MangoSense: A time-series vision sensing dataset for mango tree segmentation and detection toward yield prediction</h1>
+            <h2 style="color:red;" class="title is-3">Computers and Electronics in Agriculture (Impact Factor: 8.9) 2025</h2>
             <div class="is-size-5 publication-authors">
               <span class="author-block">
                 <a href="https://janaksinhven.github.io/">Janaksinh Ven</a><sup>1</sup>,</span>
@@ -66,10 +65,11 @@
             </div>
 
             <div class="column has-text-centered">
-              <div class="publication-links">
+              <div class="">
                 <!-- PDF Link. -->
                 <span class="link-block">
-                  <a class="external-link button is-normal is-rounded is-dark">
+                  <a href= "https://doi.org/10.1016/j.compag.2025.110524"
+                  class="external-link button is-normal is-rounded is-dark">
                     <span class="icon">
                       <i class="fas fa-file-pdf"></i>
                     </span>
@@ -78,7 +78,7 @@
                 </span>
                 <!-- Video Link. -->
                 <span class="link-block">
-                  <a href="https://janaksinhven.github.io/projects/segmango/"
+                  <a href="https://janaksinhven.github.io/projects/mangosense/"
                     class="external-link button is-normal is-rounded is-dark">
                     <span class="icon">
                       <i class="fab fa-youtube"></i>
@@ -88,7 +88,7 @@
                 </span>
                 <!-- Code Link. -->
                 <span class="link-block">
-                  <a href="https://github.com/JanaksinhVen/segmango.git"
+                  <a href="https://github.com/JanaksinhVen/mangosense-yolo-sam-annotator.git/"
                     class="external-link button is-normal is-rounded is-dark">
                     <span class="icon">
                       <i class="fab fa-github"></i>
@@ -123,35 +123,26 @@
           <h2 class="title is-3">Abstract</h2>
           <div class="content has-text-justified">
             <p>
-              Early-stage fruit yield prediction plays a key role in supporting 
-              timely agronomic decisions, enhancing market planning, and empowering 
-              farmers with data-driven insights. Over the years, most approaches to yield estima
-              tion have focused on fruit counting techniques, typically
-               performed just before harvest. While these methods have
-               proven useful, they often come into play late in the cultivation 
-               cycle, limiting their impact on early planning and
-               resource optimization. In this work, we introduce a com
-              prehensive baseline framework for predicting mango yield
-               at an earlier stage- during flowering- using image-based
-               learning. Our contributions are twofold: (i) Our approach
-               combines a SegFormer-based segmentation model with at
-              tention fusion and a regression pipeline to estimate yield
-               from images, while also exploring the role of contextual features
-                such as weather and scale. (ii) This work introduces a
-               novel benchmark and an enriched dataset, paving the way
-               for scalable, automated tools that can assist farmers and
-               stakeholders in making proactive decisions throughout the
-               mango growing season. Our work demonstrates that, for
-               multi-modal yield prediction, weather factors complement
-               visual features, while scale and weather features further reinforce
-                each other, leading to improved results. Our single
-              image model, basedontheSegFormer-B1encoder, achieved
-               a mean absolute error (MAE) of 7.21, R² of 0.8, and mean
-               squared error (MSE) of 96.83. These results highlight the
-               potential of vision-based models for yield estimation from
-               early-stage flowering cues. To the best of our knowledge,
-               this is the first work to address the prediction of mango yield
-               using images from the flowering stage and weather data.
+              Mangoes hold significant economic and cultural importance in India and globally,
+               making accurate yield prediction crucial for optimizing domestic consumption,
+                enhancing international trade, and supporting farmers in decision-making.
+                 Traditional yield estimation methods, such as manual counting, are labor-intensive,
+                  error-prone, and impractical for large-scale orchards, necessitating automated solutions.
+                   This study presents a novel time-series vision dataset for mango yield prediction,
+                    capturing images from 12 trees across eight spatial orientations (SW, S, SE, E, NE, N, NW, W)
+                     over 2.5 months to analyze fruit growth and flowering patterns. A high-resolution image
+                      dataset was created and annotated using a semi-automatic pipeline integrating YOLO for object
+                       detection and SAM for precise segmentation, significantly reducing manual annotation efforts.
+                        Benchmarking was conducted using state-of-the-art deep learning models for segmentation
+                         (DeepLabV3+, PSPNet, SegFormer, Swin-S, YOLO+SAM) and detection (Mask R-CNN, Faster R-CNN, DETR, YOLO).
+                          For flower segmentation, Swin-S achieved the best results with 67.35 IoU, followed closely by SegFormer
+                           with 66.44 IoU, while for fruitlet segmentation, YOLO+SAM obtained the highest IoU of 78.97. In detection
+                            tasks, YOLO achieved the best performance for both flowers and fruitlets, with 63.8 mAP50 and 80.5 mAP50,
+                             respectively. Additionally, segmentation is identified as a suitable approach for flower feature extraction
+                              in yield prediction models, with SegFormer emerging as a strong choice due to its lower computational cost.
+                               Furthermore, this study discusses the relationship between wind direction patterns and the flower-to-fruit
+                                conversion ratio, challenging previous research that attributed yield variations solely to canopy structure
+                                 differences with respect to orientation.
             </p>
           </div>
         </div>
